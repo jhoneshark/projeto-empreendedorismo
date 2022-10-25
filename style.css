@@ -1,3 +1,7 @@
+* {
+  font-family: Inter;
+}
+
 html,
 body {
   margin: 0;
@@ -33,68 +37,93 @@ header p {
 
 /*  Navbar  */
 nav {
+  width: 100%;
+  height: 12%;
+
+  background-image: radial-gradient(rgb(28, 27, 27), black, black);
+  color: white;
+
   position: sticky;
   top: 0;
-  height: 100px;
 
   display: flex !important;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-
-  border: 3px solid black;
-  background-color: #000000;
 
   z-index: 1000;
 }
 
-.logoDiv {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 100px;
+.container {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
 }
 
-.logoImg {
-  width: 100px;
-  height: 100px;
-  background-image: url(images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.logoArea {
+  height: 100%;
+  width: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.logoNome {
-  position: absolute;
-  top: 77%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.logoArea img {
+  height: 90px;
+  width: 90px;
+}
+
+.companyName {
   font-size: 1.5rem;
-  width: 100%;
   color: #faff04;
   font-weight: bold;
+
+  position: absolute;
+  margin-top: 60px;
 }
 
-.menuSection {
-  width: fit-content;
-  height: 24px;
-  cursor: pointer;
+.navMenu {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menuItem,
-.menuItem a {
-  color: #ffffff;
-  margin: 0 10px;
-  font-size: 1.1rem;
+.navItems {
+  margin: 0;
+  padding: 0;
+
+  width: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navItems li,
+.navItems a {
   text-decoration: none;
+  list-style-type: none;
+  color: white;
 }
 
-.menuItem a:hover {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 500;
-
-  margin: 9px;
+.navItems a:hover {
   text-decoration: none;
+  color: white;
+
+  font-weight: 600;
+}
+
+.rightNav {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*  Div carrosel  */
@@ -156,7 +185,7 @@ nav {
   position: absolute;
   left: 32.003841400146484px;
   top: 4px;
-  font-family: Inter;
+
   text-align: center;
   font-size: 39px;
   letter-spacing: 2;
@@ -170,7 +199,6 @@ nav {
   position: absolute;
   left: 18%;
   top: 260px;
-  font-family: Inter;
   text-align: center;
   font-size: 45px;
   letter-spacing: 2;
@@ -183,7 +211,7 @@ nav {
   position: absolute;
   left: 23%;
   top: 227px;
-  font-family: Inter;
+
   text-align: center;
   font-size: 23px;
   letter-spacing: 2;
@@ -195,7 +223,7 @@ nav {
   height: 53.41635513305664px;
   position: absolute;
   top: 183px;
-  font-family: Inter;
+
   text-align: center;
   font-size: 35px;
   letter-spacing: 2;
@@ -219,7 +247,7 @@ nav {
   position: absolute;
   left: 25.811079025268555px;
   top: 400px;
-  font-family: Inter;
+
   text-align: left;
   font-size: 70px;
   letter-spacing: 2;
@@ -232,7 +260,7 @@ nav {
   position: absolute;
   left: 96%;
   top: 400px;
-  font-family: Inter;
+
   font-size: 70px;
   letter-spacing: 2;
 }
