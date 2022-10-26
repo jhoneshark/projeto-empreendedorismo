@@ -434,12 +434,45 @@ footer {
 /* por favor nao mexe nesse aqui pelo amor de deus */
 
 .botao__carinho {
-  background-color: rgb(252, 252, 252);
-  width: 200px;
-  height: 200px;
-  margin-top: -1%;
-  left: 70%;
+  color: white;
+  background-color: #181818;
   position: fixed;
-  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: -350px;
+  padding: 20px;
+  width: 340px;
+  z-index: 1001;
+  transition: 0.7s;
+}
+.botao__carinho i{
+  font-size: 1.3rem;
+}
+.botao__carinho.carrinhoAberto{
+  right: 0;
+}
+
+#fecharCarrinhoBtn{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  
+  color: #cecece;
   text-align: center;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+.limparCarrinhoBtn{
+  padding: 0px;
+  border-radius: 40px;
+  width: 80px;
+  margin-bottom: 30px;
+  transition: .5s;
+  cursor: pointer;
 }
