@@ -56,7 +56,14 @@
     </header>
 
     <nav>
-      <div class="container">
+      <div class="navContainer">
+
+        <!-- Mobile Hamburguer -->
+        <button id="hamburguerBtn" class="navBtn"> 
+          <i class="fa fa-bars"></i>
+        </button>
+
+
         <a href="#" class="logoArea">
           <img
             src="../images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
@@ -89,12 +96,18 @@
               <a href="/components/contact/contato.HTML"> Contato </a>
             </li>
           </ul>
+
+          <div class="navItems2">
+            <button class="navBtn"><i class="fa fa-user"></i> <span class="nav2ItemNome">Login</span></button>
+            <button id="abrirCarrinhoBtn" class="navBtn">
+              <i class="fa fa-cart-shopping"></i>
+              <span class="nav2ItemNome">Carrinho</span>
+            </button>
+
+          </div>
         </div>
 
-        <div class="rightNav">
-          <i class="fa fa-user"></i>
-          <i class="fa fa-cart-shopping" role="button" id="abrirCarrinhoBtn"></i>
-        </div>
+        
       </div>
     </nav>
 
@@ -115,7 +128,7 @@
       <button id="fecharCarrinhoBtn"><i class="fa fa-close"></i></button>
     </div>
 
-    <section>
+    <section class="carroselSection">
       <div class="meio">
         <div class="sombraSobreFoto"></div>
 
