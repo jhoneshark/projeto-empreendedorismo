@@ -70,6 +70,7 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  cursor: pointer;
 }
 
 .logoArea img {
@@ -104,19 +105,54 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+#produtosListaDropDown{
+  position: relative;
+}
+#produtosListaDropDownUl{
+  background-color: #181818;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+  left: 0%;
+  width: 150px;
+  white-space: nowrap;
+  padding: 10px 20px 20px 10px;
+  transition: .6s;
+}
+#produtosListaDropDownUl.mostrar{
+  pointer-events: all;
+  opacity: 1;
+}
+#produtosListaDropDownUl li{
+  margin-top: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d1d1d1;
+  color: #d1d1d1;
+}
+#produtosListaDropDownUl li:hover{
+  text-indent: 5px;
+  color: #faff04;
+  border-bottom: 1px solid #faff04;
+}
+.navItems i{
+  font-size: 0.8rem;
+  margin-left: -2px;
+}
 
 .navItems li,
 .navItems a {
   text-decoration: none;
   list-style-type: none;
   color: white;
+  transition: .4s;
 }
 
 .navItems a:hover {
   text-decoration: none;
-  color: white;
+  color: #faff04;
 
-  font-weight: 600;
+  
 }
 
 .rightNav {
