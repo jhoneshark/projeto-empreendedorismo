@@ -57,13 +57,13 @@
 
     <nav>
       <div class="container">
-        <div class="logoArea">
+        <a href="#" class="logoArea">
           <img
             src="../images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
             alt="Logo"
           />
           <span class="companyName">Wolf-Fit</span>
-        </div>
+        </a>
 
         <div class="navMenu">
           <ul class="navItems">
@@ -71,7 +71,16 @@
               <a href="/"> Home </a>
             </li>
             <li>
-              <a href="/components/produtos/produtos.html"> Produtos </a>
+              <a 
+              href="#" id="produtosListaDropDown"> <span>Produtos</span> <i class="fa fa-caret-down"></i>
+                <ul id="produtosListaDropDownUl">
+                  <li>Whey Protein</li>
+                  <li>Creatina</li>
+                  <li>Halteres</li>
+                  <li>Anilhas</li>
+                </ul>
+              </a>
+              
             </li>
             <li>
               <a href="/components/sobre/sobre.html"> Sobre </a>
@@ -233,13 +242,6 @@
         </div>
       </div>
 
-      <div class="cardProduto">
-        <img src="images/camiseta-preta.png" alt="Pote de creatina" />
-        <div class="cardProdutoInfo">
-          <h6 class="tituloProduto">Tech shirt para treino</h6>
-          <h5 class="preçoProduto">R$199,90</h5>
-        </div>
-      </div>
 
       <div class="cardProduto">
         <img src="images/creatina2.jpg" alt="Pote de creatina" />
@@ -265,27 +267,13 @@
         </div>
       </div>
 
-      <div class="cardProduto">
-        <img src="images/gold-whey.png" alt="Pote de creatina" />
-        <div class="cardProdutoInfo">
-          <h6 class="tituloProduto">Whey gold Standart</h6>
-          <h5 class="preçoProduto">R$349,90</h5>
-        </div>
-      </div>
-
-      <div class="cardProduto">
-        <img src="images/gold-whey.png" alt="Pote de creatina" />
-        <div class="cardProdutoInfo">
-          <h6 class="tituloProduto">Whey gold Standart</h6>
-          <h5 class="preçoProduto">R$349,90</h5>
-        </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer>Wolf-Fit suplementos LTDA©2022</footer>
   </body>
 
+  <script src="JS/navbar.js"></script>
   <script src="JS/produtos.js "></script>
   <script src="JS/carrinho.js "></script>
 </html>
