@@ -74,15 +74,15 @@
 
         <div class="navMenu">
           <ul class="navItems">
-            <li>
+            <!-- <li>
               <a href="/"> Home </a>
-            </li>
+            </li> -->
             <li>
               <a 
               href="#" id="produtosListaDropDown"> <span>Produtos</span> <i class="fa fa-caret-down"></i>
                 <ul id="produtosListaDropDownUl">
-                  <li>Whey Protein</li>
-                  <li>Creatina</li>
+                  <li>Mais vendidos</li>
+                  <li>Promoções</li>
                   <li>Halteres</li>
                   <li>Anilhas</li>
                 </ul>
@@ -213,20 +213,18 @@
     <!-- Categoria de produtos -->
     <div class="categoriaDeProdutosContainer">
       <div class="categoriaDeProdutos">
-        <img src="images/combo-massa-muscular.png" alt="" />
+        <div class="overlay"></div>
         <h3 class="categoriaDeProdutosTitulo">Suplementos</h3>
       </div>
 
       <div class="categoriaDeProdutos">
-        <img src="images/acessorios.png" alt="" />
-        <h3 class="categoriaDeProdutosTitulo">Acessórios</h3>
-      </div>
-
-      <div class="categoriaDeProdutos">
-        <img src="images/peso.png" alt="" />
+        <div class="overlay"></div>
         <h3 class="categoriaDeProdutosTitulo">Equipamentos</h3>
       </div>
     </div>
+
+
+
 
     <!-- Produtos mais vendidos -->
     <h3 class="maisVendidosTitulo">Mais procurados</h3>
@@ -282,8 +280,90 @@
 
     </section>
 
+
+    <section class="produtosDestaqueSection">
+
+      <div class="produtoDestaque wheyDestaque">
+        <div class="produtoDestaqueOverlay"></div>
+        <div class="produto">
+  
+          <div class="descricao">
+            <h4 class="destaqueTitulo">Wolf-fit Whey</h4>
+            <p class="precoAntigo">R$399</p>
+            <p class="precoNovo">R$174,99</p>
+  
+            <button class="actionBtn">Comprar</button>
+  
+          </div>
+  
+          <img src="images/whey.png" alt="">
+        </div>
+      </div>
+
+
+
+      <div class="produtoDestaque">
+        <div class="produtoDestaqueOverlay"></div>
+        <div class="produto">
+  
+          <div class="descricao">
+            <h4 class="destaqueTitulo">Wolf-fit Creatina</h4>
+            <p class="precoAntigo">R$399</p>
+            <p class="precoNovo">R$174,99</p>
+  
+            <button class="actionBtn">Comprar</button>
+  
+          </div>
+  
+          <img src="images/creatina.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+
+    
+
+    <section class="descricaoProdutosSection wheyDescricao">
+
+      <h3>WheyProtein</h3>
+
+
+      <article class="produtoDescricao">
+        <div class="descricaoTexto">
+          <h5 class="descricaoTitulo">Para que serve o Whey protein?
+
+          </h5>
+          <p class="descricaoParagrafo">O Whey Protein serve para recuperação muscular após exercícios físicos de alta intensidade. O suplemento aumenta a força muscular e acelera a regeneração das fibras musculares após atividades físicas intensas. Com a ajuda do Whey, o processo de lesão e recuperação do músculo faz com que ele cresça.</p>
+                
+        </div>
+        <img src="images/combo-massa-muscular.png" alt="3 suplementos whey">
+      </article>
+
+
+      <article class="produtoDescricao">
+        <div class="descricaoTexto">
+          <h5 class="descricaoTitulo">Qual o melhor jeito de consumir o Whey protein?
+
+          </h5>
+          <p class="descricaoParagrafo">A melhor forma de ingerir o Whey Protein Concentrado é com água, porque a água facilita a absorção da proteína. Quando ingerida com leite, por exemplo, a digestão acontece de forma mais lenta. Não ultrapasse a quantidade de 300 ml de líquidos na preparação, mais que isso pode prejudicar a eficiência do produto.</p>
+                
+        </div>
+        <img src="images/gold-whey.png" alt="3 suplementos whey">
+      </article>
+
+    </section>
+
+    
     <!-- Footer -->
-    <footer>Wolf-Fit suplementos LTDA©2022</footer>
+    <footer>Wolf-Fit suplementos LTDA©2022
+
+      <a href="https://www.freepik.com/free-psd/protein-powder-container-mockup_17197932.htm#query=whey&position=5&from_view=search&track=sph">Image by xvector</a> on Freepik
+    </footer>
+
+    
   </body>
 
   <script src="JS/navbar.js"></script>
