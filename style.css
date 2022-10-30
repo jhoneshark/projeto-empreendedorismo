@@ -1,18 +1,33 @@
 * {
   font-family: Inter;
+  max-width: 100%;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  
 }
+
 
 :root {
   --bgImagePrimario: linear-gradient(to bottom, black, #151515);
   --corPrimaria: #faff04;
   --tamanhoCarrosel: 456px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #00000065;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 /* Informações sobre desconto e frete grátis */
@@ -151,6 +166,7 @@ nav .navContainer{
   pointer-events: none;
   left: 0%;
   width: 150px;
+  max-width: 200%!important;
   white-space: nowrap;
   padding: 10px 20px 20px 10px;
   transition: .6s;
@@ -213,6 +229,7 @@ nav .navContainer{
   background-image: url(images/gym_nobody__empty_fitness_club_2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .sombraSobreFoto {
@@ -344,7 +361,6 @@ nav .navContainer{
 
 /*  CAROUSEL  */
 .carroselSection{
-  margin-bottom: 40px;
   box-shadow: 1px 3px 5px 1px #000000b0;
 }
 
@@ -428,17 +444,7 @@ nav .navContainer{
   border: 1px solid black;
   color: var(--corPrimaria);
 }
-.categoriaDeProdutos .overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 
-  background-color: #00000065;
-  transition: 0.5s;
-  z-index: 1;
-}
 .categoriaDeProdutos .overlay:hover{
   background-color: #0000009a;
 }
@@ -454,28 +460,100 @@ nav .navContainer{
 }
 
 /*  Lista dos produtos exibidos em "Mais vendidos"  */
+.maisVendidosSection{
+  width: 100vw;
+}
+
+.maisVendidos{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: fit-content;
+}
+
+
+
+.maisVendidos .baner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(images/suplementosBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  height: 240px;
+  margin: 0px 15px 15px 15px;
+
+  font-size: 1.6rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.3s;
+}
+.baner .verMaisBtn{
+  background-color: #03c203;
+  padding: 6px 40px;
+  width: fit-content;
+  border-radius: 20px;
+  border: 3px solid #03c203;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: .4s;
+  cursor: pointer;
+}
+.baner .verMaisBtn:hover{
+  background-color: white;
+  color: #03c203;
+}
+.baner *{
+  z-index: 10;
+}
+
+
 .maisVendidosTitulo {
   text-align: center;
   text-decoration: underline;
   font-weight: 700;
   margin-top: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .listaDeProdutos {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 100px;
+  display: grid;
+  grid-template-areas: "produto1 produto2 produto3 produto4";
+  margin-bottom: 30px;
+}
+.produto1{
+  grid-area: produto1;
+}
+.produto2{
+  grid-area: produto2;
+}
+.produto3{
+  grid-area: produto3;
+}
+.produto4{
+  grid-area: produto4;
 }
 
 .cardProduto {
   width: 180px;
   height: 240px;
   padding: 5px 3px;
-  margin: 0px 15px 15px 15px;
+  margin: 0px 15px 0px 15px;
 
   display: flex;
   flex-direction: column;
@@ -483,13 +561,13 @@ nav .navContainer{
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   border-radius: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.347);
   transition: 0.3s;
   cursor: pointer;
 }
 
 .cardProduto:hover {
-  border-top: 3px solid gray;
-  border-bottom: 3px solid gray;
+  border: 3px solid rgb(171, 171, 171);
 }
 
 .cardProduto img {
@@ -504,13 +582,19 @@ nav .navContainer{
   width: fit-content;
   margin: auto;
   text-align: center;
+  font-weight: bold;
 }
 
 .tituloProduto {
-  color: #4b4b4b;
+  color: black;
   margin-bottom: 1px;
 }
 
+.preçoProduto{
+  color: #03c203;
+  font-size: 1.5rem;
+  
+}
 
 
 
@@ -519,7 +603,7 @@ nav .navContainer{
 .produtosDestaqueSection{
   width: 100vw;
   height: fit-content;
-  background-color: #ac04ac;
+  background-color: #e3e3e3;
   padding: 40px 20px;
   display: flex;
   flex-direction: row;
@@ -735,15 +819,27 @@ footer {
 
 
 
+  .maisVendidos .baner{
+    height: auto;
+  }
+  .listaDeProdutos {
+    grid-template-areas: 
+    "produto1 produto2"
+    "produto3 produto4";
+    gap: 30px 0;
+  }
 
-/* Descrição do whey protein div */
-.produtoDescricao .descricaoTexto{
-  width: max-content;
-}
 
-.produtoDescricao img{
-  width: 45%;
-}
+
+
+  /* Descrição do whey protein div */
+  .produtoDescricao .descricaoTexto{
+    width: max-content;
+  }
+
+  .produtoDescricao img{
+    width: 45%;
+  }
 
 
 
@@ -762,6 +858,26 @@ footer {
     width: 180px;
     height: 230px;
   }
+
+
+  /* Section com os prosutos mais vendidos */
+  .maisVendidos{
+    flex-direction: column;
+  }
+  .maisVendidos:nth-of-type(even){
+    flex-direction: column-reverse;
+  }
+  .maisVendidos .baner{
+    width: auto;
+    height: 300px;
+  }
+
+  .cardProduto img {
+    width: 120px;
+    max-height: 150px;
+  }
+
+  
 }
 
 @media screen and (width < 600px) {
@@ -781,7 +897,8 @@ footer {
     padding: 10px 20px 20px 10px;
     opacity: 0;
     pointer-events: none;
-    background-image: linear-gradient(to bottom, #151515, black);
+    /* background-image: linear-gradient(to bottom, #151515, black); */
+    background-color: #000000;
     background-color: rgba(0, 0, 0, 0.792);
     transition: .6s;
   }
@@ -789,6 +906,7 @@ footer {
     top: 100%;
     opacity: 1;
     pointer-events: all;
+    border-top: 2px solid var(--corPrimaria);
     border-bottom: 2px solid var(--corPrimaria);
     
   }
@@ -814,6 +932,7 @@ footer {
   #produtosListaDropDownUl{
     top: -100%;
     left: 100%;
+    width: fit-content;
     
     background-color: #1e1e1e;
   }
@@ -861,7 +980,10 @@ footer {
 }
 
 }
-@media screen and (width < 375px) {
+
+
+
+@media screen and (width < 420px) {
   
   .navItems, .navItems2{
     align-items: flex-start;
@@ -872,7 +994,7 @@ footer {
 
   #produtosListaDropDownUl{
     left: 85.5%;
-    width: 125px;
+    width: 135px;
     
   }
 
@@ -887,18 +1009,43 @@ footer {
 
 
 
-    /* Descrição do whey protein div */
-.produtoDescricao{
-  margin: 0 0 30px 0!important;
-  flex-direction: column-reverse!important;
-  justify-content: center;
-}
-.produtoDescricao .descricaoTexto{
-  width: 90%;
-}
 
-.produtoDescricao img{
-  width: 90%;
-  margin-bottom: 25px;
-}
+  .listaDeProdutos{
+    gap: 0;
+  }
+  .cardProduto {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    margin: 0px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .produto1, .produto2{
+    border-bottom: 2px solid #80808069;
+  }
+  .produto1, .produto3{
+    border-right: 1px solid #80808069;
+  }
+  .produto2, .produto4{
+    border-left: 1px solid #80808069;
+  }
+
+
+
+
+      /* Descrição do whey protein div */
+  .produtoDescricao{
+    margin: 0 0 30px 0!important;
+    flex-direction: column-reverse!important;
+    justify-content: center;
+  }
+  .produtoDescricao .descricaoTexto{
+    width: 90%;
+  }
+
+  .produtoDescricao img{
+    width: 90%;
+    margin-bottom: 25px;
+  }
 }
