@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contatos.css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
@@ -13,47 +14,90 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./contatos.css" />
-    <title>Contato</title>
+
+    <title>WOLF FIT</title>
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="logoArea">
+
+    <nav>
+      <div class="navContainer">
+
+        <!-- Mobile Hamburguer -->
+        <button id="hamburguerBtn" class="navBtn"> 
+          <i class="fa fa-bars"></i>
+        </button>
+
+
+        <a href="#" class="logoArea">
           <img
             src="../images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
             alt="Logo"
           />
           <span class="companyName">Wolf-Fit</span>
-        </div>
+        </a>
 
         <div class="navMenu">
           <ul class="navItems">
+
             <li>
-              <a href="/index.html"> Home </a>
+              <a href="../../index.html"> Home </a>
+            </li>
+            
+            <li>
+              <a id="produtosListaDropDown"> <span>Produtos</span> <i class="fa fa-caret-down"></i>
+                <ul id="produtosListaDropDownUl">
+                  <li>Mais vendidos</li>
+                  <li>Promoções</li>
+                  <li>Halteres</li>
+                  <li>Anilhas</li>
+                </ul>
+              </a>
+              
             </li>
             <li>
-              <a href="../produtos/produtos.html"> Produtos </a>
+              <a href="/components/contact/contato.HTML"> Contato </a>
             </li>
             <li>
-              <a href="../sobre/sobre.html"> Sobre </a>
-            </li>
-            <li>
-              <a href=""> Contato </a>
+              <a href="/projeto-empreendedorismo/components/menu-sobre/Sobre.html"> Sobre </a>
             </li>
           </ul>
+
+          <div class="navItems2">
+            <button class="navBtn"><i class="fa fa-user"></i> <span class="nav2ItemNome">Login</span></button>
+            <button id="abrirCarrinhoBtn" class="navBtn">
+              <i class="fa fa-cart-shopping"></i>
+              <span class="nav2ItemNome">Carrinho</span>
+            </button>
+
+          </div>
         </div>
 
-        <div class="rightNav">
-          <i class="fa fa-user"></i>
-          <i class="fa fa-cart-shopping"></i>
-        </div>
+        
       </div>
-    </header>
+    </nav>
 
-    <section>
+    <div id="botao__carinho" class="botao__carinho">
+      <h3>Carrinho <i class="fa fa-cart-shopping"></i></h3>
+      <button type="button" class="limparCarrinhoBtn" onclick=" localStorage.clear(); location.reload();"
+        >
+          Limpar
+        </button>
 
-<!-- Begin Mailchimp Signup Form -->
+      <div id="botao__carinho___tabela">
+        <div>Total: <span id="total"></span></div>
+
+        <div id="itens"></div>
+        
+      </div>
+
+      <button id="fecharCarrinhoBtn"><i class="fa fa-close"></i></button>
+    </div>
+
+<section class="forms">
+
+
+    <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
@@ -118,7 +162,12 @@
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='dropdown';fnames[7]='MMERGE7';ftypes[7]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-      
-    </section>
-  </body>
+
+</section>
+
+</body>
+
+<script src="../../JS/navbar.js"></script>
+<script src="../../JS/produtos.js "></script>
+<script src="../../JS/carrinho.js "></script>
 </html>
