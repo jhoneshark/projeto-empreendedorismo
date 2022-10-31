@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Sobre.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Sobre</title>
+</head>
+
+<body>
+ <header>
+    
+    <nav>
+        <div class="navContainer">
+  
+          <!-- Mobile Hamburguer -->
+          <button id="hamburguerBtn" class="navBtn"> 
+            <i class="fa fa-bars"></i>
+          </button>
+  
+  
+          <a href="#" class="logoArea">
+            <img
+              src="./kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
+              alt="Logo"
+            />
+            <span class="companyName">Wolf-Fit</span>
+          </a>
+  
+          <div class="navMenu">
+            <ul class="navItems">
+              <li>
+                <a href="../../index.html"> Home </a>
+              </li>
+              <li>
+                <a id="produtosListaDropDown"> <span>Produtos</span> <i class="fa fa-caret-down"></i>
+                  <ul id="produtosListaDropDownUl">
+                    <li>Mais vendidos</li>
+                    <li>Promoções</li>
+                    <li>Halteres</li>
+                    <li>Anilhas</li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="/components/contact/contato.HTML"> Contato </a>
+              </li>
+            </ul>
+  
+            <div class="navItems2">
+              <button class="navBtn"><i class="fa fa-user"></i> <span class="nav2ItemNome">Login</span></button>
+              <button id="abrirCarrinhoBtn" class="navBtn">
+                <i class="fa fa-cart-shopping"></i>
+                <span class="nav2ItemNome">Carrinho</span>
+              </button>
+  
+            </div>
+          </div>
+  
+          
+        </div>
+      </nav>
+  
+      <div id="botao__carinho" class="botao__carinho">
+        <h3>Carrinho <i class="fa fa-cart-shopping"></i></h3>
+        <button type="button" class="limparCarrinhoBtn" onclick=" localStorage.clear(); location.reload();"
+          >
+            Limpar
+          </button>
+  
+        <div id="botao__carinho___tabela">
+          <div>Total: <span id="total"></span></div>
+  
+          <div id="itens"></div>
+          
+        </div>
+  
+        <button id="fecharCarrinhoBtn"><i class="fa fa-close"></i></button>
+      </div>
+  
+ </header>
+</body>
+
+<div class="fotoFundo">
+
+    <img src="./gym_nobody__empty_fitness_club_2.png" alt="">
+
+    <div class="textDiv">
+        <h2><i id="spaceText">
+
+            </i>Wolf fit é uma empresa focada na venda de suplementos ao consumidor em geral e na venda de acessórios
+            voltados ao público de academia, assim agregando treinamento físico e saúde como estilo de vida.
+            Nossos suplementos podem ser usados para elevar o treino do consumidor para seu potencial máximo, atingindo
+            o melhor resultado que pode ser adquirido em seu treino.
+            Vendemos produtos por toda a extensão da cidade de São Paulo que podem ser adquiridos em nosso website e na
+            primeira loja física recentemente inaugurada .
+            Nosso objetivo é expandir o alcance da marca tendo lojas físicas espalhadas por todo o Brasil e capacidade
+            de entrega de nossos produtos para todo território nacional, para levar um estilo de vida ao nosso
+            consumidor onde ele estiver.
+            Ao final da pandemia houve uma crescente nesse mercado fitness e instituições que fornecem algum tipo de
+            treinamento físico, tais quais a academia é um deles, teve uma alta demanda de procura.
+            Tanto que, os objetivos marcados em relação ao projeto são facilmente alcançáveis, pois os colaboradores do
+            mesmo, possuem habilidades para realizarem, dedicação e aprendizado crescente.
+            Enfim, concluindo que, o mercado sempre irá ter uma demanda, pois a densidade população tende a seguir uma
+            linha de crescimento constante e, a ideia de adotar o estilo de vida Fitness atrai uma parcela grande de
+            pessoas, ou seja, caso fosse utilizado as ideias do projeto de maneira fictícia e concreta, haveria mercado
+            para a wolf fit.
+
+        </h2>
+    </div>
+</div>
+<script src="../../JS/navbar.js"></script>
+  <script src="../../JS/produtos.js"></script>
+  <script src="../../JS/carrinho.js"></script>
+</html>
