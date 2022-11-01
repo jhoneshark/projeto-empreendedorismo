@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible"/>
+    <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./produtos.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
@@ -13,56 +16,68 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./produtos.css" />
+
     <title>Produtos</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logoArea">
-          <img
-            src="../images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
-            alt="Logo"
-          />
-          <span class="companyName">Wolf-Fit</span>
-        </div>
+      <nav>
+        <div class="navContainer">
+          <!-- Mobile Hamburguer -->
+          <button id="hamburguerBtn" class="navBtn">
+            <i class="fa fa-bars"></i>
+          </button>
 
-        <div class="navMenu">
-          <ul class="navItems">
-            <li>
-              <a href="/"> Home </a>
-            </li>
-            <li>
-              <a href="./produtos.html"> Produtos </a>
-            </li>
-            <li>
-              <a href="../sobre/sobre.html"> Sobre </a>
-            </li>
-            <li>
-              <a href="../contact/contato.HTML"> Contato </a>
-            </li>
-          </ul>
-        </div>
+          <a href="#" class="logoArea">
+            <img
+              src="../../images/kisspng_gray_wolf_logo_mascot_clip_art_wolf_5ab4467dd78141_1.png"
+              alt="Logo"
+            />
+            <span class="companyName">Wolf-Fit</span>
+          </a>
 
-        <div class="rightNav">
-          <i class="fa fa-user"></i>
-          <i class="fa fa-cart-shopping"></i>
+          <div class="navMenu">
+            <ul class="navItems">
+              <li>
+                <a href="/"> Home </a>
+              </li>
+
+              <li>
+                <a href="/components/contact/contato.html"> Contato </a>
+              </li>
+
+              <li>
+                <a href="/components/sobre/sobre.html"> Sobre </a>
+              </li>
+            </ul>
+
+            <div class="navItems2">
+              <button class="navBtn">
+                <i class="fa fa-user"></i>
+                <span class="nav2ItemNome">Login</span>
+              </button>
+              <button id="abrirCarrinhoBtn" class="navBtn">
+                <i class="fa fa-cart-shopping"></i>
+                <span class="nav2ItemNome">Carrinho</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <section>
       <div class="categorias container">
         <div class="categoria">
-          <img src="../images/suplementos.webp" alt="" />
+          <img src="../../images/suplementos.webp" alt="" />
           <p>Suplementos</p>
         </div>
         <div class="categoria">
-          <img src="../images/Pesos-academia-pretos-Png.png" alt="" />
+          <img src="../../images/Pesos-academia-pretos-Png.png" alt="" />
           <p>Equipamentos</p>
         </div>
         <div class="categoria">
-          <img src="../images/suplementos.webp" alt="" />
+          <img src="../../images/suplementos.webp" alt="" />
           <p>Acessórios</p>
         </div>
       </div>
@@ -71,26 +86,30 @@
 
       <div class="produtos container">
         <div class="produto">
-          <img src="../images/whey.png" alt="" />
+          <img src="../../images/whey.png" alt="" />
           <p>Whey gold standard</p>
           <p class="preço">R$79,99</p>
         </div>
         <div class="produto">
-          <img src="../images/whey.png" alt="" />
+          <img src="../../images/whey.png" alt="" />
           <p>Whey gold standard</p>
           <p class="preço">R$79,99</p>
         </div>
         <div class="produto">
-          <img src="../images/whey.png" alt="" />
+          <img src="../../images/whey.png" alt="" />
           <p>Whey gold standard</p>
           <p class="preço">R$79,99</p>
         </div>
         <div class="produto">
-          <img src="../images/whey.png" alt="" />
+          <img src="../../images/whey.png" alt="" />
           <p>Whey gold standard</p>
           <p class="preço">R$79,99</p>
         </div>
       </div>
     </section>
   </body>
+
+  <script src="../../JS/navbar.js"></script>
+  <script src="../../JS/produtos.js "></script>
+  <script src="../../JS/carrinho.js "></script>
 </html>

@@ -1,3 +1,9 @@
+:root {
+  --bgImagePrimario: linear-gradient(to bottom, black, #151515);
+  --corPrimaria: #faff04;
+  --tamanhoCarrosel: 456px;
+}
+
 * {
   font-family: Inter;
   max-width: 100%;
@@ -7,18 +13,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
-  
 }
 
-
-:root {
-  --bgImagePrimario: linear-gradient(to bottom, black, #151515);
-  --corPrimaria: #faff04;
-  --tamanhoCarrosel: 456px;
-}
-
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,9 +26,6 @@ body {
   transition: 0.5s;
   z-index: 1;
 }
-
-
-
 
 /*  Navbar  */
 nav {
@@ -52,17 +46,18 @@ nav {
   z-index: 1000;
 }
 
-.navBtn{
+.navBtn {
   border: none;
   background: none;
   color: white;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
-.navBtn:hover{
+.navBtn:hover {
   color: var(--corPrimaria);
 }
-#hamburguerBtn{
+
+#hamburguerBtn {
   display: none;
   position: absolute;
   top: 50%;
@@ -74,10 +69,10 @@ nav {
   color: white;
   font-size: 1.4rem;
   cursor: pointer;
-  transition: .6s;
+  transition: 0.6s;
 }
 
-nav .navContainer{
+.navContainer {
   width: 92%;
   height: 100%;
 
@@ -132,13 +127,13 @@ nav .navContainer{
   display: flex;
   justify-content: center;
 }
-.navItems > li{
+.navItems > li {
   margin-right: 18px;
 }
-#produtosListaDropDown{
+#produtosListaDropDown {
   position: relative;
 }
-#produtosListaDropDownUl{
+#produtosListaDropDownUl {
   background-color: #181818;
   position: absolute;
   top: 100%;
@@ -146,29 +141,29 @@ nav .navContainer{
   pointer-events: none;
   left: 0%;
   width: 150px;
-  max-width: 200%!important;
+  max-width: 200% !important;
   white-space: nowrap;
   padding: 10px 20px 20px 10px;
-  transition: .6s;
+  transition: 0.6s;
 }
-#produtosListaDropDownUl.mostrar{
+#produtosListaDropDownUl.mostrar {
   pointer-events: all;
   opacity: 1;
 }
-#produtosListaDropDownUl li{
+#produtosListaDropDownUl li {
   margin-top: 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid #d1d1d1;
   color: #d1d1d1;
 }
-#produtosListaDropDownUl li:hover{
+#produtosListaDropDownUl li:hover {
   text-indent: 5px;
   color: var(--corPrimaria);
   border-bottom: 1px solid var(--corPrimaria);
 }
-.navItems i{
+.navItems i {
   font-size: 0.8rem;
-  margin-left: -2px;
+  margin-left: 2px;
 }
 
 .navItems li,
@@ -176,14 +171,12 @@ nav .navContainer{
   text-decoration: none;
   list-style-type: none;
   color: white;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .navItems a:hover {
   text-decoration: none;
   color: var(--corPrimaria);
-
-  
 }
 
 .navItems2 {
@@ -192,7 +185,7 @@ nav .navContainer{
   justify-content: space-evenly;
   align-items: center;
 }
-.nav2ItemNome{
+.nav2ItemNome {
   display: none;
 }
 
@@ -215,108 +208,94 @@ section {
   z-index: 1001;
   transition: 0.7s;
 }
-.botao__carinho i{
+.botao__carinho i {
   font-size: 1.3rem;
 }
-.botao__carinho.carrinhoAberto{
+.botao__carinho.carrinhoAberto {
   right: 0;
 }
 
-#fecharCarrinhoBtn{
+#fecharCarrinhoBtn {
   position: absolute;
   top: 25px;
   right: 25px;
 
-  
   color: #cecece;
   text-align: center;
   border: none;
   border-radius: 50%;
   background: none;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.limparCarrinhoBtn{
+.limparCarrinhoBtn {
   padding: 0px;
   border-radius: 40px;
   width: 80px;
   margin-bottom: 30px;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-
-@media screen and (width < 1180px){
-
+@media screen and (width < 1180px) {
   /* Div com os produtos em promoção */
-  .produtosDestaqueSection{
+  .produtosDestaqueSection {
     gap: 30px;
   }
-  .produtoDestaque{
+  .produtoDestaque {
     width: 90%;
     justify-content: space-around;
   }
 
-  .produtoDestaque .produto{
+  .produtoDestaque .produto {
     width: 100%;
   }
 
-  .produtoDestaque:nth-of-type(even) .produto{
+  .produtoDestaque:nth-of-type(even) .produto {
     flex-direction: row-reverse;
   }
 
-
-
-  .maisVendidos .baner{
+  .maisVendidos .baner {
     height: auto;
   }
   .listaDeProdutos {
-    grid-template-areas: 
-    "produto1 produto2"
-    "produto3 produto4";
+    grid-template-areas:
+      "produto1 produto2"
+      "produto3 produto4";
     gap: 30px 0;
   }
 
-
-
-
   /* Descrição do whey protein div */
-  .produtoDescricao .descricaoTexto{
+  .produtoDescricao .descricaoTexto {
     width: max-content;
   }
 
-  .produtoDescricao img{
+  .produtoDescricao img {
     width: 45%;
   }
-
-
-
 }
 
-@media screen and (width < 760px){
-
-  .categoriaDeProdutos{
+@media screen and (width < 760px) {
+  .categoriaDeProdutos {
     width: 90vw;
     margin-top: 5px;
   }
 
-
   /* Div com os produtos em promoção */
-  .produtoDestaque img{
+  .produtoDestaque img {
     width: 180px;
     height: 230px;
   }
 
-
   /* Section com os prosutos mais vendidos */
-  .maisVendidos{
+  .maisVendidos {
     flex-direction: column;
   }
-  .maisVendidos:nth-of-type(even){
+  .maisVendidos:nth-of-type(even) {
     flex-direction: column-reverse;
   }
-  .maisVendidos .baner{
+  .maisVendidos .baner {
     width: auto;
     height: 300px;
   }
@@ -325,20 +304,19 @@ section {
     width: 120px;
     max-height: 150px;
   }
-
-  
 }
 
 @media screen and (width < 600px) {
-  #hamburguerBtn, .nav2ItemNome{
+  #hamburguerBtn,
+  .nav2ItemNome {
     display: inline-block;
   }
-  #hamburguerBtn.ativo{
+  #hamburguerBtn.ativo {
     transform: rotate(90deg);
     top: 35%;
     color: var(--corPrimaria);
   }
-  .navMenu{
+  .navMenu {
     position: absolute;
     top: 87%;
     right: 0;
@@ -349,117 +327,100 @@ section {
     /* background-image: linear-gradient(to bottom, #151515, black); */
     background-color: #000000;
     background-color: rgba(0, 0, 0, 0.792);
-    transition: .6s;
+    transition: 0.6s;
   }
-  .navMenu.mostrar{
+  .navMenu.mostrar {
     top: 100%;
     opacity: 1;
     pointer-events: all;
     border-top: 2px solid var(--corPrimaria);
     border-bottom: 2px solid var(--corPrimaria);
-    
   }
-  .navItems2{
+  .navItems2 {
     margin-top: 10px;
   }
-  .navItems, .navItems2{
+  .navItems,
+  .navItems2 {
     width: fit-content;
   }
 
-  .navItems a, .navItems button{
+  .navItems a,
+  .navItems button {
     padding: 5px;
   }
 
-  .navMenu, .navItems, .navItems2{
-    
+  .navMenu,
+  .navItems,
+  .navItems2 {
     height: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  #produtosListaDropDownUl{
+  #produtosListaDropDownUl {
     top: -100%;
     left: 100%;
     width: fit-content;
-    
+
     background-color: #1e1e1e;
   }
 
-
-
-  
-
-
-
-  .botao__carinho{
+  .botao__carinho {
     width: 240px;
     border-left: 2px solid var(--corPrimaria);
   }
 
-
-
   /* Div com os produtos em promoção */
-  .produtosDestaqueSection{
+  .produtosDestaqueSection {
     padding: 10px;
     gap: 20px;
   }
-  .produtoDestaque{
+  .produtoDestaque {
     width: 100%;
   }
-  .produtoDestaque img{
+  .produtoDestaque img {
     width: 150px;
     height: 200px;
   }
 
-
   /* Descrição do whey protein div */
-.produtoDescricao{
-  margin: 0 0 30px 0!important;
-  flex-direction: column-reverse!important;
-  justify-content: center;
-}
-.produtoDescricao .descricaoTexto{
-  width: 90%;
-}
+  .produtoDescricao {
+    margin: 0 0 30px 0 !important;
+    flex-direction: column-reverse !important;
+    justify-content: center;
+  }
+  .produtoDescricao .descricaoTexto {
+    width: 90%;
+  }
 
-.produtoDescricao img{
-  width: 45%;
-  margin-bottom: 15px;
+  .produtoDescricao img {
+    width: 45%;
+    margin-bottom: 15px;
+  }
 }
-
-}
-
-
 
 @media screen and (width < 420px) {
-  
-  .navItems, .navItems2{
+  .navItems,
+  .navItems2 {
     align-items: flex-start;
   }
-  .navItems2 button{
+  .navItems2 button {
     padding-left: 0;
   }
 
-  #produtosListaDropDownUl{
+  #produtosListaDropDownUl {
     left: 85.5%;
     width: 135px;
-    
   }
 
-
-
   /* Div com os produtos em promoção */
-  .produtoDestaque img{
+  .produtoDestaque img {
     width: 80px;
     height: 120px;
   }
 
-
-
-
-
-  .listaDeProdutos{
+  .listaDeProdutos {
     gap: 0;
   }
   .cardProduto {
@@ -470,13 +431,16 @@ section {
     border-radius: 0;
     box-shadow: none;
   }
-  .produto1, .produto2{
+  .produto1,
+  .produto2 {
     border-bottom: 2px solid #80808069;
   }
-  .produto1, .produto3{
+  .produto1,
+  .produto3 {
     border-right: 1px solid #80808069;
   }
-  .produto2, .produto4{
+  .produto2,
+  .produto4 {
     border-left: 1px solid #80808069;
   }
 }
