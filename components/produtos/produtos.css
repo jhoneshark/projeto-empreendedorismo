@@ -197,77 +197,51 @@ nav .navContainer {
   display: none;
 }
 
-/* .container {
-  width: 80%;
-  height: 100%;
+/* Carrinho */
 
-  display: flex;
-  align-items: center;
+.botao__carinho {
+  color: white;
+  background-color: #181818;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -385px;
+  padding: 20px;
+  width: 340px;
+  z-index: 1001;
+  transition: 0.7s;
+}
+.botao__carinho i {
+  font-size: 1.3rem;
+}
+.botao__carinho.carrinhoAberto {
+  right: 0;
 }
 
-.logoArea {
-  height: 100%;
-  width: 10%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.logoArea img {
-  height: 90px;
-  width: 90px;
-}
-
-.companyName {
-  font-size: 1.5rem;
-  color: #faff04;
-  font-weight: bold;
-
+#fecharCarrinhoBtn {
   position: absolute;
-  margin-top: 60px;
+  top: 25px;
+  right: 25px;
+
+  color: #cecece;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.navMenu {
-  width: 80%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.limparCarrinhoBtn {
+  padding: 0px;
+  border-radius: 40px;
+  width: 80px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.navItems {
-  margin: 0;
-  padding: 0;
-
-  width: 50%;
-
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navItems li,
-.navItems a {
-  text-decoration: none;
-  list-style-type: none;
-  color: white;
-}
-
-.navItems a:hover {
-  text-decoration: none;
-  color: white;
-
-  font-weight: 600;
-}
-
-.rightNav {
-  width: 10%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-} */
+/* Section */
 
 section {
   height: 88%;
@@ -277,6 +251,14 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
 }
 
 .categorias {

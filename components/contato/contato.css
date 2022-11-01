@@ -127,12 +127,15 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 .navItems > li {
   margin-right: 18px;
 }
+
 #produtosListaDropDown {
   position: relative;
 }
+
 #produtosListaDropDownUl {
   background-color: #181818;
   position: absolute;
@@ -146,21 +149,25 @@ nav {
   padding: 10px 20px 20px 10px;
   transition: 0.6s;
 }
+
 #produtosListaDropDownUl.mostrar {
   pointer-events: all;
   opacity: 1;
 }
+
 #produtosListaDropDownUl li {
   margin-top: 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid #d1d1d1;
   color: #d1d1d1;
 }
+
 #produtosListaDropDownUl li:hover {
   text-indent: 5px;
   color: var(--corPrimaria);
   border-bottom: 1px solid var(--corPrimaria);
 }
+
 .navItems i {
   font-size: 0.8rem;
   margin-left: 2px;
@@ -185,16 +192,12 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .nav2ItemNome {
   display: none;
 }
 
-section {
-  height: 88%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/* Carrinho */
 
 .botao__carinho {
   color: white;
@@ -202,7 +205,7 @@ section {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -370px;
+  right: -385px;
   padding: 20px;
   width: 340px;
   z-index: 1001;
@@ -236,6 +239,15 @@ section {
   margin-bottom: 30px;
   transition: 0.5s;
   cursor: pointer;
+}
+
+/* Section */
+
+section {
+  height: 88%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (width < 1180px) {

@@ -182,7 +182,54 @@ nav .navContainer {
   display: none;
 }
 
+/* Carrinho */
+
+.botao__carinho {
+  color: white;
+  background-color: #181818;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -385px;
+  padding: 20px;
+  width: 340px;
+  z-index: 1001;
+  transition: 0.7s;
+}
+
+.botao__carinho i {
+  font-size: 1.3rem;
+}
+
+.botao__carinho.carrinhoAberto {
+  right: 0;
+}
+
+#fecharCarrinhoBtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  color: #cecece;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.limparCarrinhoBtn {
+  padding: 0px;
+  border-radius: 40px;
+  width: 80px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /* Section */
+
 .overlay {
   position: absolute;
   top: 0;
