@@ -14,7 +14,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+body{
+  background-color: #fafafa;
+}
 /*  Navbar  */
 nav {
   width: 100vw;
@@ -242,31 +244,64 @@ nav .navContainer {
   z-index: 1;
 }
 
-.fotoFundo img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+.quemSomos{
+  position: relative;
+  width: 100vw;
+  height: 35vh;
+
+  background-image: url(../../images/sobreBg.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  box-shadow: 0px 1px 2px 1px black;
 }
 
-.textDiv {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
 
-h2 {
-  color: rgb(255, 255, 255);
+.quemSomos > .titulo{
+  position: absolute;
+  top: 35%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
-  font-family: sans-serif;
-  width: 61%;
-  font-size: 22px;
-  margin-top: 12%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.4000000059604645);
-  border-radius: 2%;
+  text-shadow: 1px 1px 5px #000000;
+  z-index: 100;
+}
+
+.textoContainer{
+  padding: 50px;
+}
+
+  .textoContainer h2{
+    font-size: 1.4rem;
+    color: #e6482c;
+    font-weight: bold;
+  }
+  .textoContainer h3{
+    text-decoration: underline;
+  }
+.textoContainer p{
+  text-indent: 15px;
+  font-size: 1.05rem;
+}
+
+/*  Footer  */
+footer {
+  padding: 10px;
+  background-color: black;
+  color: #686868;
+  text-align: center;
+}
+
+@media screen and (width < 430px) {
+  .quemSomos{
+    height: 25vh;
+  }
+  
 }
