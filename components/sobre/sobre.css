@@ -441,6 +441,64 @@ footer .creditos{
     width: 30vw;
   }
 }
+  
+}
 
 
 
+@media screen and (width < 600px) {
+  #hamburguerBtn,
+  .nav2ItemNome {
+    display: inline-block;
+  }
+  #hamburguerBtn.ativo {
+    transform: rotate(90deg);
+    top: 35%;
+    color: var(--corPrimaria);
+  }
+  .navMenu {
+    position: absolute;
+    top: 87%;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px 20px 10px;
+    opacity: 0;
+    pointer-events: none;
+    /* background-image: linear-gradient(to bottom, #151515, black); */
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.792);
+    transition: 0.6s;
+  }
+  .navMenu.mostrar {
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;
+    border-top: 2px solid var(--corPrimaria);
+    border-bottom: 2px solid var(--corPrimaria);
+  }
+  .navItems2 {
+    margin-top: 10px;
+  }
+  .navItems,
+  .navItems2 {
+    width: fit-content;
+  }
+
+  .navItems a,
+  .navItems button {
+    padding: 5px;
+  }
+
+  .navMenu,
+  .navItems,
+  .navItems2 {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botao__carinho {
+    width: 240px;
+    border-left: 2px solid var(--corPrimaria);
+  }
