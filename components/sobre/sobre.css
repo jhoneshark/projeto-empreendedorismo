@@ -120,42 +120,6 @@ nav .navContainer {
   margin-right: 18px;
 }
 
-#produtosListaDropDown {
-  position: relative;
-}
-
-#produtosListaDropDownUl {
-  background-color: #181818;
-  position: absolute;
-  top: 100%;
-  opacity: 0;
-  pointer-events: none;
-  left: 0%;
-  width: 150px;
-  max-width: 200% !important;
-  white-space: nowrap;
-  padding: 10px 20px 20px 10px;
-  transition: 0.6s;
-}
-
-#produtosListaDropDownUl.mostrar {
-  pointer-events: all;
-  opacity: 1;
-}
-
-#produtosListaDropDownUl li {
-  margin-top: 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #d1d1d1;
-  color: #d1d1d1;
-}
-
-#produtosListaDropDownUl li:hover {
-  text-indent: 5px;
-  color: var(--corPrimaria);
-  border-bottom: 1px solid var(--corPrimaria);
-}
-
 .navItems i {
   font-size: 0.8rem;
   margin-left: 2px;
@@ -278,30 +242,205 @@ nav .navContainer {
   padding: 50px;
 }
 
-  .textoContainer h2{
-    font-size: 1.4rem;
-    color: #e6482c;
-    font-weight: bold;
-  }
-  .textoContainer h3{
-    text-decoration: underline;
-  }
-.textoContainer p{
-  text-indent: 15px;
-  font-size: 1.05rem;
+.textoContainer h2{
+  font-size: 1.4rem;
+  color: #e6482c;
+  font-weight: bold;
 }
+.textoContainer h3{
+  text-decoration: underline;
+}
+.textoContainer p{
+text-indent: 15px;
+font-size: 1.05rem;
+}
+
+
+
 
 /*  Footer  */
 footer {
   padding: 10px;
-  background-color: black;
+  background-image: linear-gradient(to bottom, black, #0c0c0c);
   color: #686868;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+footer .cadastroEmail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
-@media screen and (width < 430px) {
+footer form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cadastroEmail p{
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: white;
+  font-weight: bold;
+}
+.cadastroEmail input[type="email"]{
+  margin: 0 20px;
+  font-size: 1.3rem;
+  height: 40px;
+}
+.cadastroEmail button{
+  padding: 5px 10px;
+  color: white;
+  height: 40px;
+  width: 150px;
+  font-size: 1.1rem;
+  border: 2px solid white;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+}
+
+footer .creditos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 30px;
+}
+.creditos h5{
+  font-size: 1.2rem;
+}
+
+.creditos > *{
+  display: flex;
+  flex-direction: column;
+}
+.creditos a{
+  color: #f1f1f1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.creditos a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (width < 630px) {
+
+  header p{
+    font-size: 13px;
+  }
+
+  #hamburguerBtn,
+  .nav2ItemNome {
+    display: inline-block;
+  }
+  #hamburguerBtn.ativo {
+    transform: rotate(90deg);
+    top: 35%;
+    color: var(--corPrimaria);
+  }
+  .navMenu {
+    position: absolute;
+    top: 87%;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px 20px 10px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.792);
+    transition: 0.6s;
+  }
+  .navMenu.mostrar {
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;
+    border-top: 2px solid var(--corPrimaria);
+    border-bottom: 2px solid var(--corPrimaria);
+  }
+  .navItems2 {
+    margin-top: 10px;
+  }
+  .navItems,
+  .navItems2 {
+    width: fit-content;
+  }
+
+  .navItems a,
+  .navItems button {
+    padding: 5px;
+  }
+
+  .navMenu,
+  .navItems,
+  .navItems2 {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botao__carinho {
+    width: 240px;
+    border-left: 2px solid var(--corPrimaria);
+  }
+
+  footer .cadastroEmail{
+    flex-direction: column;
+  }
+  .cadastroEmail p{
+    margin-bottom: 15px;
+  }
+}
+
+
+@media screen and (width < 460px) {
+  
+  .navItems,
+  .navItems2 {
+    align-items: flex-start;
+  }
+  .navItems2 button {
+    padding-left: 0;
+  }
+
   .quemSomos{
     height: 25vh;
   }
-  
+
+  footer form{
+    flex-direction: column;
+    width: 100vw;
+    
+  }
+
+  footer form *{
+    margin-top: 10px;
+    width: 100%!important;
+  }
+
+  footer .creditos a{
+    margin-bottom: 12px;
+    width: 30vw;
+  }
 }
+
+
+
