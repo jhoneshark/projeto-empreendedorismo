@@ -284,6 +284,7 @@ footer form{
 }
 .cadastroEmail p{
   font-size: 1.3rem;
+  margin-top: 0;
   margin-bottom: 0;
   color: white;
   font-weight: bold;
@@ -310,10 +311,12 @@ footer .creditos{
   flex-direction: row;
   justify-content: space-evenly;
 
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .creditos h5{
   font-size: 1.2rem;
+  margin: 15px 0;
 }
 
 .creditos > *{
