@@ -132,42 +132,6 @@ nav {
   margin-right: 18px;
 }
 
-#produtosListaDropDown {
-  position: relative;
-}
-
-#produtosListaDropDownUl {
-  background-color: #181818;
-  position: absolute;
-  top: 100%;
-  opacity: 0;
-  pointer-events: none;
-  left: 0%;
-  width: 150px;
-  max-width: 200% !important;
-  white-space: nowrap;
-  padding: 10px 20px 20px 10px;
-  transition: 0.6s;
-}
-
-#produtosListaDropDownUl.mostrar {
-  pointer-events: all;
-  opacity: 1;
-}
-
-#produtosListaDropDownUl li {
-  margin-top: 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #d1d1d1;
-  color: #d1d1d1;
-}
-
-#produtosListaDropDownUl li:hover {
-  text-indent: 5px;
-  color: var(--corPrimaria);
-  border-bottom: 1px solid var(--corPrimaria);
-}
-
 .navItems i {
   font-size: 0.8rem;
   margin-left: 2px;
@@ -336,7 +300,6 @@ section {
     padding: 10px 20px 20px 10px;
     opacity: 0;
     pointer-events: none;
-    /* background-image: linear-gradient(to bottom, #151515, black); */
     background-color: #000000;
     background-color: rgba(0, 0, 0, 0.792);
     transition: 0.6s;
@@ -368,14 +331,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  #produtosListaDropDownUl {
-    top: -100%;
-    left: 100%;
-    width: fit-content;
-
-    background-color: #1e1e1e;
   }
 
   .botao__carinho {
@@ -419,11 +374,6 @@ section {
   }
   .navItems2 button {
     padding-left: 0;
-  }
-
-  #produtosListaDropDownUl {
-    left: 85.5%;
-    width: 135px;
   }
 
   /* Div com os produtos em promoção */
