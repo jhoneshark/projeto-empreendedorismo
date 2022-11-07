@@ -206,7 +206,7 @@ nav .navContainer {
 
 .navItems a:hover {
   text-decoration: none;
-  color: var(--corPrimaria)!important;
+  color: var(--corPrimaria) !important;
 }
 
 .navItems2 {
@@ -486,7 +486,7 @@ nav .navContainer {
 
   transition: 0.3s;
 }
-.maisVendidos:nth-of-type(3) .baner{
+.maisVendidos:nth-of-type(3) .baner {
   background-image: url(images/equipamentosBg.jpg);
 }
 .baner .verMaisBtn {
@@ -717,7 +717,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-footer .cadastroEmail{
+footer .cadastroEmail {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -725,25 +725,25 @@ footer .cadastroEmail{
   margin: 20px 0;
 }
 
-footer form{
+footer form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.cadastroEmail p{
+.cadastroEmail p {
   font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
   font-weight: bold;
 }
-.cadastroEmail input[type="email"]{
+.cadastroEmail input[type="email"] {
   margin: 0 20px;
   font-size: 1.3rem;
   height: 40px;
 }
-.cadastroEmail button{
+.cadastroEmail button {
   padding: 5px 10px;
   color: white;
   height: 40px;
@@ -755,7 +755,7 @@ footer form{
   cursor: pointer;
 }
 
-footer .creditos{
+footer .creditos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -763,17 +763,17 @@ footer .creditos{
   margin: 30px 0;
 }
 
-.creditos > *{
+.creditos > * {
   display: flex;
   flex-direction: column;
 }
-.creditos a{
+.creditos a {
   color: #f1f1f1;
   font-weight: bold;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.creditos a:hover{
+.creditos a:hover {
   color: white;
   text-decoration: underline;
 }
@@ -893,7 +893,7 @@ footer .creditos{
 }
 
 @media screen and (width < 630px) {
-  header p{
+  header p {
     font-size: 13px;
   }
   #hamburguerBtn,
@@ -987,10 +987,10 @@ footer .creditos{
     margin-bottom: 15px;
   }
 
-  footer .cadastroEmail{
+  footer .cadastroEmail {
     flex-direction: column;
   }
-  .cadastroEmail p{
+  .cadastroEmail p {
     margin-bottom: 15px;
   }
 }
@@ -1054,18 +1054,17 @@ footer .creditos{
     margin-bottom: 25px;
   }
 
-  footer form{
+  footer form {
     flex-direction: column;
     width: 100vw;
-    
   }
 
-  footer form *{
+  footer form * {
     margin-top: 10px;
-    width: 100%!important;
+    width: 100% !important;
   }
 
-  footer .creditos a{
+  footer .creditos a {
     margin-bottom: 12px;
     width: 30vw;
   }

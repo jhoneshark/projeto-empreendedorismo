@@ -1,7 +1,6 @@
 :root {
   --bgImagePrimario: linear-gradient(to bottom, black, #151515);
   --corPrimaria: #faff04;
-  --tamanhoCarrosel: 456px;
 }
 
 * {
@@ -14,9 +13,11 @@ body {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background-color: #fafafa;
 }
+
 /*  Navbar  */
 nav {
   width: 100vw;
@@ -43,9 +44,11 @@ nav {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .navBtn:hover {
   color: var(--corPrimaria);
 }
+
 #hamburguerBtn {
   display: none;
   position: absolute;
@@ -208,7 +211,7 @@ nav .navContainer {
   z-index: 1;
 }
 
-.quemSomos{
+.quemSomos {
   position: relative;
   width: 100vw;
   height: 35vh;
@@ -226,8 +229,7 @@ nav .navContainer {
   box-shadow: 0px 1px 2px 1px black;
 }
 
-
-.quemSomos > .titulo{
+.quemSomos > .titulo {
   position: absolute;
   top: 35%;
   color: white;
@@ -238,25 +240,24 @@ nav .navContainer {
   z-index: 100;
 }
 
-.textoContainer{
+.textoContainer {
   padding: 50px;
 }
 
-.textoContainer h2{
+.textoContainer h2 {
   font-size: 1.4rem;
   color: #e6482c;
   font-weight: bold;
 }
-.textoContainer h3{
+
+.textoContainer h3 {
   text-decoration: underline;
 }
-.textoContainer p{
-text-indent: 15px;
-font-size: 1.05rem;
+
+.textoContainer p {
+  text-indent: 15px;
+  font-size: 1.05rem;
 }
-
-
-
 
 /*  Footer  */
 footer {
@@ -268,7 +269,8 @@ footer {
   display: flex;
   flex-direction: column;
 }
-footer .cadastroEmail{
+
+footer .cadastroEmail {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -276,25 +278,28 @@ footer .cadastroEmail{
   margin: 20px 0;
 }
 
-footer form{
+footer form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.cadastroEmail p{
+
+.cadastroEmail p {
   font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
   font-weight: bold;
 }
-.cadastroEmail input[type="email"]{
+
+.cadastroEmail input[type="email"] {
   margin: 0 20px;
   font-size: 1.3rem;
   height: 40px;
 }
-.cadastroEmail button{
+
+.cadastroEmail button {
   padding: 5px 10px;
   color: white;
   height: 40px;
@@ -306,7 +311,7 @@ footer form{
   cursor: pointer;
 }
 
-footer .creditos{
+footer .creditos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -314,40 +319,30 @@ footer .creditos{
   margin-top: 0px;
   margin-bottom: 30px;
 }
-.creditos h5{
+
+.creditos h5 {
   font-size: 1.2rem;
   margin: 15px 0;
 }
 
-.creditos > *{
+.creditos > * {
   display: flex;
   flex-direction: column;
 }
-.creditos a{
+.creditos a {
   color: #f1f1f1;
   font-weight: bold;
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.creditos a:hover{
+.creditos a:hover {
   color: white;
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (width < 630px) {
-
-  header p{
+  header p {
     font-size: 13px;
   }
 
@@ -355,11 +350,13 @@ footer .creditos{
   .nav2ItemNome {
     display: inline-block;
   }
+
   #hamburguerBtn.ativo {
     transform: rotate(90deg);
     top: 35%;
     color: var(--corPrimaria);
   }
+
   .navMenu {
     position: absolute;
     top: 87%;
@@ -371,6 +368,7 @@ footer .creditos{
     background-color: rgba(0, 0, 0, 0.792);
     transition: 0.6s;
   }
+
   .navMenu.mostrar {
     top: 100%;
     opacity: 1;
@@ -378,9 +376,11 @@ footer .creditos{
     border-top: 2px solid var(--corPrimaria);
     border-bottom: 2px solid var(--corPrimaria);
   }
+
   .navItems2 {
     margin-top: 10px;
   }
+
   .navItems,
   .navItems2 {
     width: fit-content;
@@ -405,60 +405,57 @@ footer .creditos{
     border-left: 2px solid var(--corPrimaria);
   }
 
-  footer .cadastroEmail{
+  footer .cadastroEmail {
     flex-direction: column;
   }
-  .cadastroEmail p{
+
+  .cadastroEmail p {
     margin-bottom: 15px;
   }
 }
 
-
 @media screen and (width < 460px) {
-  
   .navItems,
   .navItems2 {
     align-items: flex-start;
   }
+
   .navItems2 button {
     padding-left: 0;
   }
 
-  .quemSomos{
+  .quemSomos {
     height: 25vh;
   }
 
-  footer form{
+  footer form {
     flex-direction: column;
     width: 100vw;
-    
   }
 
-  footer form *{
+  footer form * {
     margin-top: 10px;
-    width: 100%!important;
+    width: 100% !important;
   }
 
-  footer .creditos a{
+  footer .creditos a {
     margin-bottom: 12px;
     width: 30vw;
   }
 }
-  
-
-
-
 
 @media screen and (width < 600px) {
   #hamburguerBtn,
   .nav2ItemNome {
     display: inline-block;
   }
+
   #hamburguerBtn.ativo {
     transform: rotate(90deg);
     top: 35%;
     color: var(--corPrimaria);
   }
+
   .navMenu {
     position: absolute;
     top: 87%;
@@ -472,6 +469,7 @@ footer .creditos{
     background-color: rgba(0, 0, 0, 0.792);
     transition: 0.6s;
   }
+
   .navMenu.mostrar {
     top: 100%;
     opacity: 1;
@@ -479,9 +477,11 @@ footer .creditos{
     border-top: 2px solid var(--corPrimaria);
     border-bottom: 2px solid var(--corPrimaria);
   }
+
   .navItems2 {
     margin-top: 10px;
   }
+
   .navItems,
   .navItems2 {
     width: fit-content;
