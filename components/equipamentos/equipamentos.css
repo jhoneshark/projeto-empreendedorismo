@@ -224,12 +224,14 @@ section {
   display: flex;
   flex-direction: column;
 
-  margin: 80px 0;
+  margin: 40px 0;
 }
 
 .produto {
   height: 250px;
   width: 45%;
+
+  margin: 20px 0;
 
   background-color: rgba(190, 185, 185, 0.296);
 
