@@ -13,9 +13,9 @@ document.getElementById("hamburguerBtn").addEventListener("click", () => {
     document.getElementById("produtosListaDropDownUl").classList.add("mostrar");
     });
 
-  document
-  .getElementById("produtosListaDropDown")
-  .addEventListener("mouseleave", () => {
+    document
+    .getElementById("produtosListaDropDown")
+    .addEventListener("mouseleave", () => {
 
     document.getElementById("produtosListaDropDownUl").classList.remove("mostrar");
   });

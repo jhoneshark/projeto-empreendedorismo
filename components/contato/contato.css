@@ -1,7 +1,6 @@
 :root {
   --bgImagePrimario: linear-gradient(to bottom, black, #151515);
   --corPrimaria: #faff04;
-  --tamanhoCarrosel: 456px;
 }
 
 * {
@@ -175,9 +174,11 @@ nav {
   z-index: 1001;
   transition: 0.7s;
 }
+
 .botao__carinho i {
   font-size: 1.3rem;
 }
+
 .botao__carinho.carrinhoAberto {
   right: 0;
 }
@@ -214,84 +215,18 @@ section {
   justify-content: center;
 }
 
-@media screen and (width < 1180px) {
-  /* Div com os produtos em promoção */
-  .produtosDestaqueSection {
-    gap: 30px;
-  }
-  .produtoDestaque {
-    width: 90%;
-    justify-content: space-around;
-  }
-
-  .produtoDestaque .produto {
-    width: 100%;
-  }
-
-  .produtoDestaque:nth-of-type(even) .produto {
-    flex-direction: row-reverse;
-  }
-
-  .maisVendidos .baner {
-    height: auto;
-  }
-  .listaDeProdutos {
-    grid-template-areas:
-      "produto1 produto2"
-      "produto3 produto4";
-    gap: 30px 0;
-  }
-
-  /* Descrição do whey protein div */
-  .produtoDescricao .descricaoTexto {
-    width: max-content;
-  }
-
-  .produtoDescricao img {
-    width: 45%;
-  }
-}
-
-@media screen and (width < 760px) {
-  .categoriaDeProdutos {
-    width: 90vw;
-    margin-top: 5px;
-  }
-
-  /* Div com os produtos em promoção */
-  .produtoDestaque img {
-    width: 180px;
-    height: 230px;
-  }
-
-  /* Section com os prosutos mais vendidos */
-  .maisVendidos {
-    flex-direction: column;
-  }
-  .maisVendidos:nth-of-type(even) {
-    flex-direction: column-reverse;
-  }
-  .maisVendidos .baner {
-    width: auto;
-    height: 300px;
-  }
-
-  .cardProduto img {
-    width: 120px;
-    max-height: 150px;
-  }
-}
-
 @media screen and (width < 600px) {
   #hamburguerBtn,
   .nav2ItemNome {
     display: inline-block;
   }
+
   #hamburguerBtn.ativo {
     transform: rotate(90deg);
     top: 35%;
     color: var(--corPrimaria);
   }
+
   .navMenu {
     position: absolute;
     top: 87%;
@@ -304,6 +239,7 @@ section {
     background-color: rgba(0, 0, 0, 0.792);
     transition: 0.6s;
   }
+
   .navMenu.mostrar {
     top: 100%;
     opacity: 1;
@@ -311,9 +247,11 @@ section {
     border-top: 2px solid var(--corPrimaria);
     border-bottom: 2px solid var(--corPrimaria);
   }
+
   .navItems2 {
     margin-top: 10px;
   }
+
   .navItems,
   .navItems2 {
     width: fit-content;
@@ -337,34 +275,6 @@ section {
     width: 240px;
     border-left: 2px solid var(--corPrimaria);
   }
-
-  /* Div com os produtos em promoção */
-  .produtosDestaqueSection {
-    padding: 10px;
-    gap: 20px;
-  }
-  .produtoDestaque {
-    width: 100%;
-  }
-  .produtoDestaque img {
-    width: 150px;
-    height: 200px;
-  }
-
-  /* Descrição do whey protein div */
-  .produtoDescricao {
-    margin: 0 0 30px 0 !important;
-    flex-direction: column-reverse !important;
-    justify-content: center;
-  }
-  .produtoDescricao .descricaoTexto {
-    width: 90%;
-  }
-
-  .produtoDescricao img {
-    width: 45%;
-    margin-bottom: 15px;
-  }
 }
 
 @media screen and (width < 420px) {
@@ -374,35 +284,5 @@ section {
   }
   .navItems2 button {
     padding-left: 0;
-  }
-
-  /* Div com os produtos em promoção */
-  .produtoDestaque img {
-    width: 80px;
-    height: 120px;
-  }
-
-  .listaDeProdutos {
-    gap: 0;
-  }
-  .cardProduto {
-    width: auto;
-    height: auto;
-    padding: 5px 2px;
-    margin: 0px;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  .produto1,
-  .produto2 {
-    border-bottom: 2px solid #80808069;
-  }
-  .produto1,
-  .produto3 {
-    border-right: 1px solid #80808069;
-  }
-  .produto2,
-  .produto4 {
-    border-left: 1px solid #80808069;
   }
 }
