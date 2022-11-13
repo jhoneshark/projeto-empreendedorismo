@@ -210,7 +210,6 @@ nav .navContainer {
 /* Section */
 
 section {
-  height: 88%;
   width: 100%;
 
   display: flex;
@@ -219,84 +218,98 @@ section {
   flex-direction: column;
 }
 
-.container {
-  width: 80%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-}
-
-.categorias {
-  height: 200px;
-
-  display: flex;
-  justify-content: space-around;
-}
-
-.categorias img {
-  height: 120px;
-  width: 120px;
-}
-
-.categorias p {
-  margin: 0rem;
-  padding: 0;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.categoria {
-  border: solid 1px black;
-  height: 80%;
-  width: 30%;
-
-  overflow: hidden;
-
-  background-color: #f5f5f5;
+.produtos {
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
 
-h3 {
-  font-size: 2.5rem;
-  margin: 2% 0 0 0;
-}
-
-.produtos {
-  display: flex;
-  justify-content: space-between;
-  height: 200px;
-  width: 60%;
-  margin-top: 25px;
+  margin: 40px 0;
 }
 
 .produto {
-  height: 200px;
-  width: 20%;
+  height: 250px;
+  width: 45%;
+
+  margin: 20px 0;
+
+  background-color: rgba(190, 185, 185, 0.296);
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-
-.produto p {
-  margin: 0 0 10px 0;
-  padding: 0;
-
-  font-weight: 600;
-}
-
-.produto > .preço {
-  font-weight: 900;
 }
 
 .produto img {
   height: 120px;
   width: 120px;
+
+  margin: 0;
+}
+
+.produto.rightInside {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.produto.leftInside {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.info h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.info span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.info p {
+  font-weight: 900;
+
+  color: #d404d4;
+}
+
+.info button {
+  width: 160px;
+  height: 40px;
+
+  border: 2px solid rgba(0, 0, 0, 0.792);
+  border-radius: 30px;
+
+  margin-top: 3px;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  background-color: #f8fffa;
+  color: #d404d4;
+
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media screen and (width < 600px) {

@@ -238,6 +238,12 @@ section {
   width: 120px;
 }
 
+.categorias img.acessorios {
+  height: 100px;
+  margin-top: 20px;
+
+}
+
 .categorias p,
 .categorias a {
   margin: 0rem;
