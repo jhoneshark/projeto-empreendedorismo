@@ -465,7 +465,6 @@ nav .navContainer {
   justify-content: center;
   align-items: center;
 
-  background-image: url(images/suplementosBg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,7 +486,11 @@ nav .navContainer {
 
   transition: 0.3s;
 }
-.maisVendidos:nth-of-type(3) .baner {
+
+.maisVendidos .baner.suplementoBaner{
+  background-image: url(images/suplementosBg.jpg);
+}
+.maisVendidos .baner.equipamentoBaner {
   background-image: url(images/equipamentosBg.jpg);
 }
 .baner .verMaisBtn {
@@ -710,7 +713,6 @@ nav .navContainer {
 /*  Footer  */
 footer {
   padding: 10px;
-  /* background-color: black; */
   background-image: linear-gradient(to bottom, black, #0c0c0c);
   color: #686868;
   text-align: center;
@@ -780,9 +782,6 @@ footer .creditos {
 }
 
 /*  Carrinho  */
-
-/* por favor nao mexe nesse aqui pelo amor de deus */
-
 .botao__carinho {
   color: white;
   background-color: #181818;
@@ -934,7 +933,7 @@ footer .creditos {
     height: 230px;
   }
 
-  /* Section com os prosutos mais vendidos */
+  /* Section com os produtos mais vendidos */
   .maisVendidos {
     flex-direction: column;
   }
