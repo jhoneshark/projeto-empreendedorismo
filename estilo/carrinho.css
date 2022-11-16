@@ -1,0 +1,119 @@
+
+/*  Carrinho  */
+.botao__carinho {
+    color: white;
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -350px;
+    padding: 20px;
+    width: 340px;
+    z-index: 1001;
+    transition: 0.7s;
+    overflow-y: auto;
+  }
+  .botao__carinho i {
+    font-size: 1.3rem;
+  }
+  .botao__carinho.carrinhoAberto {
+    right: 0;
+  }
+  
+  #fecharCarrinhoBtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  
+    color: #cecece;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .limparCarrinhoBtn {
+    padding: 0px;
+    border-radius: 40px;
+    width: 80px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .botao__carinho ul{
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+  }
+  .botao__carinho ul li{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  
+    padding: 15px 0;
+    margin-top: 10px;
+  }
+  .botao__carinho ul li .produtoInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .botao__carinho ul li .produtoInfo .bottomInfo{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #cecece; 
+    
+  }
+  .botao__carinho ul li .titulo{
+    font-size: 1.4rem;
+    margin: 0;
+    color: #cecece; 
+  }
+  .botao__carinho ul li .preco{ 
+    font-weight: bold;
+  
+  }
+  .botao__carinho ul img{
+    width: 100px;
+    height: 100px;
+    margin-right: 13px;
+  }
+  
+  #apagarItemDoCarrinhoBtn{
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    border: none;
+    background: none;
+    color: #cecece;
+  
+    cursor: pointer;
+    transition: .5s;
+  }
+  #apagarItemDoCarrinhoBtn:hover{
+    color: red;
+  }
+
+
+
+
+
+
+  
+  
+@media screen and (width < 630px) {
+    
+    .botao__carinho {
+      width: 240px;
+      border-left: 2px solid var(--corPrimaria);
+    }
+  
+}
+  
